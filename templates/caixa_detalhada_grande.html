@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Template de Recibos POS</title>
+	</head>
+<body>
+
+	<table
+	  width = "100%" >
+	  <tr>
+		  <td>
+		  <img src = 'C:/Users/Public/sistema/sistema/logo.png' width = "80" >
+		  </td>
+	  </tr>
+	</table>
+
+	<center> {empresa} </center>
+	<center> {endereco} </center>
+	<center> {nuit} </center>
+	<center> {contactos}</center>
+	<center align='left'>{data_impressao}</center>
+	<center align='left'>{data_abertura}</center>
+	<center align='left'>{data_fecho}</center>
+	<center align='left'>{aberta_por}</center>
+	<center align='left'>{fechada_por}</center>
+	<br>
+	<center align='left'>{valor_inicial}</center>
+	<center align='left'>{receitas}</center>
+	<center align='left'>{despesas}</center>
+	<hr/>
+	<center align='left'>{usuario}</center>
+	<hr/>
+
+	<table border=0 width = 100% style='border: thin; style='font-size: 8px;''> 
+		<tr> 
+			<td> {documento} </td> 
+		</tr> 
+	</table>
+
+	<table border=0 width = 100% style='border: thin;'>
+		<tr style='background-color:#c0c0c0;'>
+			<th width = 10%>DOC</th>
+			<th width = 30%>Descrição</th>
+			<th width = 5%>Qt.</th>
+			<th width = 10%>Preço</th>
+			<th width = 10%>Desconto</th>
+			<th width = 15%>Subtotal</th>
+			<th width = 15%>IVA</th>
+			<th width = 15%>Total</th>
+		</tr>
+		<tr>
+			<td>{tipo_documento}</td> 
+			<td>{produto}</td> 
+			<td>{quantidade}</td> 
+			<td>{preco}</td> 
+			<td align="right">{desconto}</td>
+			<td align="right">{subtotal}</td>
+			<td align="right">{iva}</td>
+			<td align="right">{total}</td>
+		</tr>
+		<tr><td align="right">{desconto_geral}</td></tr>
+		<tr><td align="right">{subtotal_geral}</td></tr>
+		<tr><td align="right">{iva_geral}</td></tr>
+		<tr><td align="right">{total_geral}</td></tr>
+	</table>
+	
+	<!-- Recibos -->
+	<table border=0 width = 100%>
+		<tr> <td> RECIBOS </tr> </td> 
+	</table>
+
+	<table border=0 width = 100% style='border: thin;'>
+
+		<tr style='background-color:#c0c0c0;'>
+			<th width = 10%>Data</th>
+			<th width = 10%>Numero</th>
+			<th width = 60%>CLIENTE</th>
+			<th width = 20%>TOTAL</th>
+		</tr>
+		<tr style="background-color:red;">  
+			<td>{recibo_data}</td> 
+			<td>{recibo_numero}</td> 
+			<td>{recibo_cliente}</td> 
+			<td align="right">{recibo_total}</td> 
+		</tr>
+		<tr> 
+			<td></td> <td></td><td></td> <td align='right'><b>{recibo_total_geral}</b></td>
+		</tr>
+	</table>
+	<hr>
+	<center>processado por computador</center>
+</body>
+</html>

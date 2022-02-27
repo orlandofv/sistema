@@ -1,0 +1,41 @@
+-- Limpa toda a Base de dados
+-- 10-09-2021: Orlando Vilanculos
+
+DROP TABLE IF EXISTS facturacaodetalhe;
+DROP TABLE IF EXISTS facturacao;
+DROP TABLE IF EXISTS caixa;
+DROP TABLE IF EXISTS armazem;
+DROP TABLE IF EXISTS caixadetalhe;
+DROP TABLE IF EXISTS receitas;
+DROP TABLE IF EXISTS produtosdetalhe;
+DROP TABLE IF EXISTS produtos;
+DROP TABLE IF EXISTS familia;
+DROP TABLE IF EXISTS subfamilia;
+DROP TABLE IF EXISTS documentos;
+DROP TABLE IF EXISTS taxas;
+DROP TABLE IF EXISTS relacoes;
+DROP TABLE IF EXISTS clientes;
+DROP TABLE IF EXISTS stock;
+DROP TABLE IF EXISTS stockdetalhe;
+DROP TABLE IF EXISTS fornecedores;
+DROP TABLE IF EXISTS requisicaodetalhe;
+DROP TABLE IF EXISTS requisicao;
+DROP TABLE IF EXISTS recibos;
+DROP TABLE IF EXISTS recibosdetalhe;
+DROP TABLE IF EXISTS pagamentos;
+DROP TABLE IF EXISTS config;
+DROP TABLE IF EXISTS hospedes;boavenda_boavenda_db
+DROP TABLE IF EXISTS categorias;
+DROP TABLE IF EXISTS quartos;
+DROP TABLE IF EXISTS reservas;
+DROP TABLE IF EXISTS check_in;
+DROP TABLE IF EXISTS alunos;
+DROP TABLE IF EXISTS estudantes;
+DROP TABLE IF EXISTS instrutores;
+DROP TABLE IF EXISTS cursos;
+DROP TABLE IF EXISTS formacao;
+DROP TABLE IF EXISTS certificado;
+DROP TABLE IF EXISTS mesas;
+DROP TABLE IF EXISTS cozinhadetalhe;
+DROP TABLE IF EXISTS cozinha;
+DROP TABLE IF EXISTS users;

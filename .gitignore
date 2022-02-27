@@ -1,0 +1,39 @@
+# ignore a single file
+
+
+# ignore an entire directory
+/dist/
+/build/
+/images/
+/ico/
+/img/
+/GUI/
+/android/
+/sistema_venv/
+/Styles/
+/stylesheets/
+/.idea/
+/.git/
+/__pycache__/
+/relatorios/
+
+
+# ignore a file type
+*.spec
+*.exe
+*.json
+*.png
+*.jpg
+*.css
+*.ico
+*.spec
+*.md
+*.txt
+*.pyc
+*.qrc
+*.svg
+*.ui
+*.qss
+*.bmp
+*.INFO
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <img src="{logo}" height="148" width="296">
+
+    <div style="font-size: 14px; padding: 0px;">
+        <p>{empresa_nome}</p>
+        <p>{empresa_endereco}</p>
+        <p>Contactos: {empresa_contactos}</p>
+        <p>NUIT: {empresa_nuit}</p>
+        <p>{empresa_slogan}</p>
+        <br>
+        <p>Lista de Pessoal</p>
+    </div>
+    <hr>
+    <div style="font-size: 8px;">
+        <table width="100%" style="border: 1px solid springgreen">
+            <tr style="background-color: springgreen; 
+            border-bottom: 1px solid sienna;">
+               {header}
+            </tr>
+            {items}
+        </table>
+    </div>
+</body>
+</html>

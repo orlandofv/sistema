@@ -1,0 +1,1 @@
+C:\pyqt\chap07>pyuic5 -o ui_findandreplacedlg.py findandreplacedlg.ui

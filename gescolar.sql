@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS `alunos` (
+  `cod` varchar(50) NOT NULL,
+  `nome` varchar(255) NOT NULL,
+  `apelido` varchar(255) DEFAULT NULL,
+  `endereco` varchar(255) DEFAULT NULL,
+  `sexo` varchar(15) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `nascimento` varchar(50) DEFAULT NULL,
+  `contactos` varchar(255) DEFAULT NULL,
+  `emergencia` varchar(255) DEFAULT NULL,
+  `tipo_id` varchar(20) DEFAULT NULL,
+  `numero_id` varchar(20) DEFAULT NULL,
+  `validade_id` varchar(50) DEFAULT NULL,
+  `nacionalidade` varchar(50) DEFAULT NULL,
+  `obs` varchar(255) DEFAULT NULL,
+  `estado` int(11) DEFAULT '1',
+  `created` date DEFAULT NULL,
+  `modified` date DEFAULT NULL,
+  `modified_by` varchar(255) DEFAULT NULL,
+  `created_by` varchar(255) DEFAULT NULL,
+  foto varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`cod`)
+) ENGINE=InnoDB DEFAULT;

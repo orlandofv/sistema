@@ -1,0 +1,87 @@
+<!-- Microgest POS print tamplate Version 1.1.0
+Created: 19-06-2021 12:27
+Updated: 22-06-2021 19:19
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Template de Recibos POS</title>
+	</head>
+
+	<body style="font-size:8px;">
+
+		<!-- Logo if any -->
+		<table width = "100%">
+			<tr>
+			   <td>
+			   <img src = '{logo}' width = "80">
+			   </td>
+			</tr>
+		</table >
+		
+
+		<div style='width:100%; border:1px solid;'>
+			<center style='font-weight:bolder;'> {empresa} </center>
+			<center align='left'>{endereco}</center>
+			<center align='left'>NUIT: {nuit}</center>
+			<center align='left'>{contactos}</center>
+			<center align='left' style='font-size: 10px;'>{documento}</center>
+			<center align='left'>Data: {data}</center>
+			<center align='left'>Usuário: {user}</center>
+			<center align='left'>Exmo(a) Sr(a).: {cliente}</center>
+			<center align='left'>{mesa}</center>
+			<br>
+			<center align='left'>{total_items}</center>
+			
+			<table border='0' width = 80mm style='border: thin;'>
+				<!-- Table Header -->
+				<tr style="border-bottom: 1px solid black;">
+					<th align='left' width = 60%>Descrição</th>
+					<th align='center' width = 10%>Qt.</th>
+					<th align='right' width = 10%>Preço</th>
+					<th align='right' width = 20% align='right'>Total</th>
+				</tr>
+				
+				<!-- Table Items: Items Loops happens here -->	
+				{items}
+			
+			</table>
+			<hr/>
+			
+			<!-- Totals -->
+			<table>
+				<tr>
+					<th width = 50% align='right'>SUBTOTAL</th>
+					<th width = 50% align='right'>{subtotal}</th>
+				</tr>
+				<tr>
+					<th width = 50% align='right'>IVA</th>
+					<th width = 50% align='right'>{iva}</th>
+				</tr>
+				<tr>
+					<th width = 50% align='right'>TOTAL</th>
+					<th width = 50% align='right'>{total}</th>
+				</tr>
+				<tr>
+					<th width = 50% align='right'>VALOR PAGO</th>
+					<th width = 50% align='right'>{pago}</th>
+				</tr>
+				<tr>
+					<th width=50% align='right'>TROCOS</th>
+					<th width = 50% align='right'>{trocos}</th>
+				</tr>
+			</table>
+			
+			<hr/>
+			<!-- Footer -->
+			<center align='left'>{contas}</center>
+			<center align='left'> Obrigado Volte Sempre!!! </center>
+			<center align='left'> Processado por Computador </center>
+		</div>
+		<p></p>
+		<p></p>
+
+	</body>
+</html>
